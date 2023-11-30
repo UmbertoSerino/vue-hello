@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <div id="app">
         <pre>
             {{ title }}
@@ -31,7 +31,7 @@
             <label for="classes">Tipo di classe:</label>
             <input type="text" v-model="classString" id="classes" name="classes">
         </div>
-        <p :class="classString" >
+        <p v-bind:class="classString" >
             Benvenuto! {{firstName}} {{lastName}}
         </p>
     </div>

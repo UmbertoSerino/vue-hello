@@ -18,22 +18,13 @@
         </pre>
         <h1>
             {{ firstName }} {{ lastName }}
-            {{ message }}
         </h1>
         <h2>
-            la tua posizione è: {{ counter}}
+            Numero del pilota: {{ pilotNumber}}
         </h2>
-
-        <div v-bind="classString">
-            <input type="text" v-model="message">
-        </div>
         <div>
-            <label for="classes">Tipo di classe:</label>
-            <input type="text" v-model="classString" id="classes" name="classes">
+            <img :src="profileImg" alt="">
         </div>
-        <p v-bind:class="classString" >
-            Benvenuto! {{firstName}} {{lastName}}
-        </p>
     </div>
 
     <script src=".//script/script.js"></script>

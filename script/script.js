@@ -6,11 +6,11 @@ createApp({
     data() {
         return {
             message: 'Ok',
-            title: 'primo pilota',
-            firstName: 'Lando',
-            lastName: 'Norris',
-            counter: 2,
-            classString: ""
+            title: 'Ferrari F1 Driver',
+            firstName: 'Charles',
+            lastName: 'Leclerc',
+            pilotNumber: 16,
+            profileImg: "./img/Leclerc.jfif"
         }
     }
 }).mount('#app');
